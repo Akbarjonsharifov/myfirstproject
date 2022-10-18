@@ -405,3 +405,42 @@ a {
 .quote__icon {
     font-size: 0.1rem;;
 }
+
+.quote__line {
+    position: relative;
+    bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .quote {
+        font-size: 2rem;
+    }
+
+    .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .quote__organization {
+        font-size: 1.6rem;
+    }
+}
+
+/* ICONS */
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+}
+
+.icon-container {
+    background: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
