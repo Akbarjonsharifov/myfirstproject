@@ -435,6 +435,10 @@ a {
     fill: var(--color-primary);
 }
 
+.icon--white {
+    fill: #fff;
+}
+
 .icon-container {
     background: #f3f9fa;
     width: 64px;
@@ -444,3 +448,44 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.icon-container--accent {
+    background: var(--color-accent);
+}
+
+/* GRIDS */ 
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* TESTIMONIAL */
+.testimonial{
+    padding: 3rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image > img {
+    width: 100%;
+}
+
+.testimonial__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;;
+}
+
